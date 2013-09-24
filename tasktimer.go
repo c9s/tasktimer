@@ -36,10 +36,7 @@ func (self *TaskTimer) End() {
 }
 
 func Trace(s string) *TaskTimer {
-	return &TaskTimer{
-		TaskName:  s,
-		StartTime: time.Now(),
-	}
+	return &TaskTimer{TaskName: s, StartTime: time.Now()}
 }
 
 /*
